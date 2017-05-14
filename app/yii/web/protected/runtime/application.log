@@ -1,0 +1,1428 @@
+2017/03/03 01:53:53 [error] [exception.ParseError] ParseError: syntax error, unexpected '{', expecting '(' in /opt/lampp/htdocs/yii/web/protected/models/Kotak.php:10
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Kotak')
+#1 [internal function]: spl_autoload_call('Kotak')
+#2 /opt/lampp/htdocs/yii/framework/YiiBase.php(303): class_exists('Kotak', true)
+#3 /opt/lampp/htdocs/yii/framework/gii/generators/form/FormCode.php(58): YiiBase::import('Kotak', true)
+#4 /opt/lampp/htdocs/yii/framework/validators/CInlineValidator.php(42): FormCode->validateModel('model', Array)
+#5 /opt/lampp/htdocs/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(FormCode), 'model')
+#6 /opt/lampp/htdocs/yii/framework/base/CModel.php(159): CValidator->validate(Object(FormCode), Array)
+#7 /opt/lampp/htdocs/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#8 /opt/lampp/htdocs/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#9 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#10 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/form/index')
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/web/index.php?r=gii/form/index
+HTTP_REFERER=http://localhost/yii/web/index.php?r=gii/form/index
+---
+2017/03/03 02:01:52 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(5): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(23): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:02:38 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(5): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(23): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:03:26 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(5): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(23): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:06:36 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(5): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(23): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:07:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(5): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(23): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:09:21 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(23): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:12:21 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:13:13 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:13:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:13:16 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:13:16 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:13:16 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:13:40 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(7): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:15:27 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:14 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:16 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:17 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:17 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:17 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:39 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:39 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:16:40 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:18:53 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:19:02 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:19:41 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:20:53 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:25:55 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:28:30 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:37 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:38 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:39 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:39 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:39 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:39 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:33:40 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(24): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:39:24 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:39:56 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:39:58 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:40:23 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:40:24 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:40:25 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:40:25 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:40:50 [error] [php] Undefined variable: Kotak (/opt/lampp/htdocs/yii/web/protected/views/kotak/input.php:10)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(869): KotakController->renderFile()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(782): KotakController->renderPartial()
+#2 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): KotakController->render()
+#3 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#7 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php (10)
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (26)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/03 02:41:11 [error] [php] Undefined variable: Kotak (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:26)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (26)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/03 02:42:09 [error] [php] Undefined variable: kotak (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:26)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (26)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/03 02:42:18 [error] [php] Undefined variable: Kotak (/opt/lampp/htdocs/yii/web/protected/views/kotak/input.php:10)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(869): KotakController->renderFile()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(782): KotakController->renderPartial()
+#2 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): KotakController->render()
+#3 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#7 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php (10)
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (26)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/03 02:42:21 [error] [php] Undefined variable: Kotak (/opt/lampp/htdocs/yii/web/protected/views/kotak/input.php:10)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(869): KotakController->renderFile()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(782): KotakController->renderPartial()
+#2 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): KotakController->render()
+#3 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#7 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php (10)
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (26)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/03 02:42:40 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:43:49 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:43:50 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(10): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:44:14 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:44:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:44:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:44:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:44:15 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:45:58 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:51:16 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:51:17 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:51:17 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:58:02 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:58:14 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:59:01 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/03 02:59:45 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/05 00:05:38 [error] [exception.CException] CException: KotakController cannot find the requested view "form". in /opt/lampp/htdocs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/input.php(11): CController->renderPartial('form', Array)
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('input', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(26): CController->render('input', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/05 00:16:05 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /opt/lampp/htdocs/yii/web/protected/views/kotak/luas.php:7
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('luas', Array, true)
+#3 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(39): CController->render('luas', Array)
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionLuas()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('luas')
+#9 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/luas')
+#10 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/luas&panjang=2&lebar=3
+HTTP_REFERER=http://localhost/yii/web/index.php?r=kotak/input
+---
+2017/03/05 00:29:55 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:40:23 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:41:20 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:43:36 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:45:53 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:48:27 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:48:30 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:49:10 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:51:39 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 00:54:47 [error] [php] Undefined index: tebal (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:22)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (22)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 01:32:45 [error] [exception.ParseError] ParseError: syntax error, unexpected ''r'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /opt/lampp/htdocs/yii/web/protected/models/Kotak.php:13
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Kotak')
+#1 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(12): spl_autoload_call('Kotak')
+#2 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionInput()
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('input')
+#7 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/input')
+#8 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+---
+2017/03/05 01:41:04 [error] [php] Undefined variable: jari (/opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php:27)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(286): KotakController->runAction()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(265): KotakController->runActionWithFilters()
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): KotakController->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /opt/lampp/htdocs/yii/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/web/index.php?r=kotak/input
+in /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php (27)
+in /opt/lampp/htdocs/yii/web/index.php (13)
+2017/03/05 01:41:23 [error] [exception.CException] CException: Property "Kotak.r" is not defined. in /opt/lampp/htdocs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /opt/lampp/htdocs/yii/web/protected/views/kotak/luas.php(5): CComponent->__set('r', '22')
+#1 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('luas', Array, true)
+#5 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(39): CController->render('luas', Array)
+#6 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionLuas()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('luas')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/luas')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/luas&0=volume&panjang=3&lebar=2&tebal=2&jari=22
+HTTP_REFERER=http://localhost/yii/web/index.php?r=kotak/input
+---
+2017/03/05 02:00:35 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /opt/lampp/htdocs/yii/web/protected/views/kotak/luas.php:48
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('luas', Array, true)
+#3 /opt/lampp/htdocs/yii/web/protected/controllers/KotakController.php(41): CController->render('luas', Array)
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(49): KotakController->actionLuas()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('luas')
+#9 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kotak/luas')
+#10 /opt/lampp/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /opt/lampp/htdocs/yii/web/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/web/index.php?r=kotak/luas&0=volume&panjang=3&lebar=2&tebal=3&jari=10&tinggi=28
+HTTP_REFERER=http://localhost/yii/web/index.php?r=kotak/input
+---
