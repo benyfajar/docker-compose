@@ -1,7 +1,5 @@
 # docker-compose<br/>
-Kelompok :<br/>
--Beny Fajar R.<br/>
--Rachmat Ardian P.<br/><br/>
+<br/>
 Menggabungkan 2 buah image/container menggunkan docker-compose<br/>
 Link image : <a href="https://hub.docker.com/r/prayoga03/apache-tcc/">Apache</a>,
              <a href="https://hub.docker.com/r/prayoga03/mysql-tcc/">Mysql</a><br/>
